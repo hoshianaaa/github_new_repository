@@ -1,0 +1,146 @@
+
+(session thinker_board_shield.ses
+  (base_design thinker_board_shield.dsn)
+  (placement
+    (resolution um 10)
+    (component hoshina_library:XH4PIN_S
+      (place U3 250000 -115000 back 180)
+    )
+    (component hoshina_library:1PIN
+      (place U2 198120 -134620 front 180)
+    )
+    (component hoshina_library:register_0603
+      (place R1 297180 -149860 front 0)
+    )
+    (component hoshina_library:Thinker_board_pin
+      (place J2 512300 -83700 front 0)
+    )
+    (component "hoshina_library:S2B-XH-A"
+      (place U1 130000 -130000 back 0)
+    )
+    (component hoshina_library:Hole_2.7mm
+      (place H1 35000 -35000 front 0)
+      (place H2 525000 -35000 front 0)
+      (place H3 525000 -615000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.4)-1")
+    )
+    (library_out 
+      (padstack "Via[0-3]_400:200_um"
+        (shape
+          (circle F.Cu 4000 0 0)
+        )
+        (shape
+          (circle In1.Cu 4000 0 0)
+        )
+        (shape
+          (circle In2.Cu 4000 0 0)
+        )
+        (shape
+          (circle B.Cu 4000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path B.Cu 15000
+            130000 -130000
+            146860 -130000
+            208280 -68580
+            393700 -68580
+            455120 -130000
+            457496 -130000
+            490250 -162754
+            490250 -175271
+            500279 -185300
+            512300 -185300
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 15000
+            512300 -185300
+            500279 -185300
+            490250 -175271
+            490250 -162754
+            393536 -66040
+            206688 -66040
+            142728 -130000
+            130000 -130000
+          )
+          (type protect)
+        )
+      )
+      (net 5V
+        (wire
+          (path B.Cu 15000
+            537700 -83700
+            537700 -75000
+            528400 -65700
+            414862 -65700
+            400742 -51580
+            183420 -51580
+            130000 -105000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 15000
+            537700 -83700
+            537700 -71679
+            531721 -65700
+            417238 -65700
+            400578 -49040
+            185960 -49040
+            130000 -105000
+          )
+          (type protect)
+        )
+      )
+      (net +3V3
+        (wire
+          (path In1.Cu 1500
+            512300 -83700
+            281300 -83700
+            250000 -115000
+          )
+        )
+      )
+      (net "Net-(R1-Pad1)"
+        (wire
+          (path F.Cu 1500
+            292330 -149860
+            275000 -132530
+            275000 -115000
+          )
+        )
+      )
+      (net "Net-(U2-Pad1)"
+        (wire
+          (path F.Cu 1500
+            198120 -134620
+            215873 -134620
+          )
+        )
+        (wire
+          (path F.Cu 1500
+            215873 -134620
+            215873 -133510
+            245598 -103785
+            288785 -103785
+            300000 -115000
+          )
+        )
+      )
+    )
+  )
+)
