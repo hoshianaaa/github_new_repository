@@ -25,9 +25,9 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    4700 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 3500 2    50   Input ~ 0
+Text GLabel 1900 3450 2    50   Input ~ 0
 5V
-Text GLabel 2700 3400 2    50   Input ~ 0
+Text GLabel 1900 3250 2    50   Input ~ 0
 GND
 Text GLabel 4450 3000 0    50   Input ~ 0
 5V
@@ -79,18 +79,18 @@ Wire Wire Line
 	5000 5900 5000 5800
 Connection ~ 4900 5900
 Wire Wire Line
-	2600 3400 2700 3400
+	1500 2700 1600 2700
 Wire Wire Line
-	2700 3500 2600 3500
+	1600 2800 1500 2800
 $Comp
 L hoshina_library:XH_S U1
 U 1 1 5D710EE3
-P 2600 3400
-F 0 "U1" H 2643 3219 50  0000 C CNN
-F 1 "XH_S" H 2643 3310 50  0000 C CNN
-F 2 "hoshina_library:S2B-XH-A" H 2600 3300 50  0001 C CNN
-F 3 "" H 2600 3300 50  0001 C CNN
-	1    2600 3400
+P 1500 2700
+F 0 "U1" H 1543 2519 50  0000 C CNN
+F 1 "XH_S" H 1543 2610 50  0000 C CNN
+F 2 "hoshina_library:S2B-XH-A" H 1500 2600 50  0001 C CNN
+F 3 "" H 1500 2600 50  0001 C CNN
+	1    1500 2700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -217,4 +217,19 @@ F 3 "" H 2550 4400 50  0001 C CNN
 	1    2550 4400
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Jack-DC J1
+U 1 1 5D792B55
+P 1600 3350
+F 0 "J1" H 1657 3675 50  0000 C CNN
+F 1 "Jack-DC" H 1657 3584 50  0000 C CNN
+F 2 "hoshina_library:DCJ" H 1650 3310 50  0001 C CNN
+F 3 "~" H 1650 3310 50  0001 C CNN
+	1    1600 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2800 2    50   Input ~ 0
+5V
+Text GLabel 1600 2700 2    50   Input ~ 0
+GND
 $EndSCHEMATC
