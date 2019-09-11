@@ -1,4 +1,4 @@
-16377822249882612
+16388800242841149
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72905,6 +72905,13 @@ hoshina_library
 3
 3
 hoshina_library
+2_pin
+
+
+0
+2
+2
+hoshina_library
 2pin_power_gnd
 
 
@@ -73016,6 +73023,20 @@ Hole_3.3mm
 0
 0
 0
+hoshina_library
+LED_3mm_side
+
+
+0
+2
+2
+hoshina_library
+LED_3mm_side_hole
+
+
+0
+2
+2
 hoshina_library
 LED_1608
 LED SMD 0603 (1608 Metric), castellated end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
@@ -73192,6 +73213,13 @@ fhoto_capra_PS817
 4
 4
 hoshina_library
+raspberry_pi_4
+
+
+0
+0
+0
+hoshina_library
 register_0603
 aitendo_R0603-1
 capacitor
@@ -73226,6 +73254,27 @@ test
 0
 0
 0
+hoshina_library
+yulo_block_2P
+
+
+0
+2
+2
+hoshina_library
+yulo_block_4P
+
+
+0
+4
+4
+hoshina_library
+yulo_block_6P
+
+
+0
+6
+6
 project_footprints
 NPTH_3mm_ID
 

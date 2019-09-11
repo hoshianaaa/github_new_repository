@@ -193,4 +193,28 @@ F 3 "" H 4800 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 2950 4800 3200
+$Comp
+L hoshina_library:2_pin U4
+U 1 1 5D790A94
+P 2650 4450
+F 0 "U4" H 2778 4501 50  0000 L CNN
+F 1 "2_pin" H 2778 4410 50  0000 L CNN
+F 2 "hoshina_library:2_pin" H 2650 4300 50  0001 C CNN
+F 3 "" H 2650 4300 50  0001 C CNN
+	1    2650 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 4500 0    50   Input ~ 0
+GND
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5D7912AC
+P 2550 4400
+F 0 "#PWR0103" H 2550 4250 50  0001 C CNN
+F 1 "+3.3V" V 2565 4528 50  0000 L CNN
+F 2 "" H 2550 4400 50  0001 C CNN
+F 3 "" H 2550 4400 50  0001 C CNN
+	1    2550 4400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
