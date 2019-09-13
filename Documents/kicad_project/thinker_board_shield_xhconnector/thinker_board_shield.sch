@@ -25,9 +25,9 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    4700 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1900 3450 2    50   Input ~ 0
+Text GLabel 1800 2800 2    50   Input ~ 0
 5V
-Text GLabel 1900 3250 2    50   Input ~ 0
+Text GLabel 1800 2600 2    50   Input ~ 0
 GND
 Text GLabel 4450 3000 0    50   Input ~ 0
 5V
@@ -79,18 +79,18 @@ Wire Wire Line
 	5000 5900 5000 5800
 Connection ~ 4900 5900
 Wire Wire Line
-	1500 2700 1600 2700
+	1400 2050 1500 2050
 Wire Wire Line
-	1600 2800 1500 2800
+	1500 2150 1400 2150
 $Comp
 L hoshina_library:XH_S U1
 U 1 1 5D710EE3
-P 1500 2700
-F 0 "U1" H 1543 2519 50  0000 C CNN
-F 1 "XH_S" H 1543 2610 50  0000 C CNN
-F 2 "hoshina_library:S2B-XH-A" H 1500 2600 50  0001 C CNN
-F 3 "" H 1500 2600 50  0001 C CNN
-	1    1500 2700
+P 1400 2050
+F 0 "U1" H 1443 1869 50  0000 C CNN
+F 1 "XH_S" H 1443 1960 50  0000 C CNN
+F 2 "hoshina_library:S2B-XH-A" H 1400 1950 50  0001 C CNN
+F 3 "" H 1400 1950 50  0001 C CNN
+	1    1400 2050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -129,57 +129,57 @@ $EndComp
 $Comp
 L hoshina_library:XH_4PIN U3
 U 1 1 5D76ADEE
-P 2600 3950
-F 0 "U3" H 2878 4051 50  0000 L CNN
-F 1 "XH_4PIN" H 2878 3960 50  0000 L CNN
-F 2 "hoshina_library:XH4PIN_S" H 2600 3750 50  0001 C CNN
-F 3 "" H 2600 3750 50  0001 C CNN
-	1    2600 3950
+P 2550 4550
+F 0 "U3" H 2828 4651 50  0000 L CNN
+F 1 "XH_4PIN" H 2828 4560 50  0000 L CNN
+F 2 "hoshina_library:XH4PIN_S" H 2550 4350 50  0001 C CNN
+F 3 "" H 2550 4350 50  0001 C CNN
+	1    2550 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5D76B7AA
-P 2600 3750
-F 0 "#PWR0101" H 2600 3600 50  0001 C CNN
-F 1 "+3.3V" V 2615 3878 50  0000 L CNN
-F 2 "" H 2600 3750 50  0001 C CNN
-F 3 "" H 2600 3750 50  0001 C CNN
-	1    2600 3750
+P 1800 3450
+F 0 "#PWR0101" H 1800 3300 50  0001 C CNN
+F 1 "+3.3V" V 1815 3578 50  0000 L CNN
+F 2 "" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0001 C CNN
+	1    1800 3450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2000 3850 0    50   Input ~ 0
+Text GLabel 1950 4450 0    50   Input ~ 0
 GND
 $Comp
 L Device:R R1
 U 1 1 5D76C583
-P 2300 3850
-F 0 "R1" V 2093 3850 50  0000 C CNN
-F 1 "R" V 2184 3850 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V 2230 3850 50  0001 C CNN
-F 3 "~" H 2300 3850 50  0001 C CNN
-	1    2300 3850
+P 2250 4450
+F 0 "R1" V 2043 4450 50  0000 C CNN
+F 1 "R" V 2134 4450 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V 2180 4450 50  0001 C CNN
+F 3 "~" H 2250 4450 50  0001 C CNN
+	1    2250 4450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2450 3850 2600 3850
+	2400 4450 2550 4450
 Wire Wire Line
-	2000 3850 2150 3850
-Text GLabel 2600 4050 0    50   Input ~ 0
+	1950 4450 2100 4450
+Text GLabel 2550 4650 0    50   Input ~ 0
 GND
 $Comp
 L hoshina_library:1PIN U2
 U 1 1 5D76DD85
-P 1650 3900
-F 0 "U2" H 1742 3735 50  0000 C CNN
-F 1 "1PIN" H 1742 3826 50  0000 C CNN
-F 2 "hoshina_library:1PIN" H 1750 3850 50  0001 C CNN
-F 3 "" H 1750 3850 50  0001 C CNN
-	1    1650 3900
+P 1600 4500
+F 0 "U2" H 1692 4335 50  0000 C CNN
+F 1 "1PIN" H 1692 4426 50  0000 C CNN
+F 2 "hoshina_library:1PIN" H 1700 4450 50  0001 C CNN
+F 3 "" H 1700 4450 50  0001 C CNN
+	1    1600 4500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2600 3950 1650 3950
+	2550 4550 1650 4550
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5D76E558
@@ -196,40 +196,117 @@ Wire Wire Line
 $Comp
 L hoshina_library:2_pin U4
 U 1 1 5D790A94
-P 2650 4450
-F 0 "U4" H 2778 4501 50  0000 L CNN
-F 1 "2_pin" H 2778 4410 50  0000 L CNN
-F 2 "hoshina_library:2_pin" H 2650 4300 50  0001 C CNN
-F 3 "" H 2650 4300 50  0001 C CNN
-	1    2650 4450
+P 2650 5200
+F 0 "U4" H 2778 5251 50  0000 L CNN
+F 1 "2_pin" H 2778 5160 50  0000 L CNN
+F 2 "hoshina_library:2_pin" H 2650 5050 50  0001 C CNN
+F 3 "" H 2650 5050 50  0001 C CNN
+	1    2650 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 4500 0    50   Input ~ 0
+Text GLabel 2550 5250 0    50   Input ~ 0
 GND
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5D7912AC
-P 2550 4400
-F 0 "#PWR0103" H 2550 4250 50  0001 C CNN
-F 1 "+3.3V" V 2565 4528 50  0000 L CNN
-F 2 "" H 2550 4400 50  0001 C CNN
-F 3 "" H 2550 4400 50  0001 C CNN
-	1    2550 4400
+P 2550 5150
+F 0 "#PWR0103" H 2550 5000 50  0001 C CNN
+F 1 "+3.3V" V 2565 5278 50  0000 L CNN
+F 2 "" H 2550 5150 50  0001 C CNN
+F 3 "" H 2550 5150 50  0001 C CNN
+	1    2550 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Jack-DC J1
 U 1 1 5D792B55
-P 1600 3350
-F 0 "J1" H 1657 3675 50  0000 C CNN
-F 1 "Jack-DC" H 1657 3584 50  0000 C CNN
-F 2 "hoshina_library:DCJ" H 1650 3310 50  0001 C CNN
-F 3 "~" H 1650 3310 50  0001 C CNN
-	1    1600 3350
+P 1500 2700
+F 0 "J1" H 1557 3025 50  0000 C CNN
+F 1 "Jack-DC" H 1557 2934 50  0000 C CNN
+F 2 "hoshina_library:DCJ" H 1550 2660 50  0001 C CNN
+F 3 "~" H 1550 2660 50  0001 C CNN
+	1    1500 2700
 	1    0    0    -1  
 $EndComp
-Text GLabel 1600 2800 2    50   Input ~ 0
+Text GLabel 1500 2150 2    50   Input ~ 0
 5V
-Text GLabel 1600 2700 2    50   Input ~ 0
+Text GLabel 1500 2050 2    50   Input ~ 0
 GND
+$Comp
+L hoshina_library:connectable_smd s3
+U 1 1 5D7B42C4
+P 1950 3450
+F 0 "s3" H 1950 3675 50  0000 C CNN
+F 1 "connectable_smd" H 1950 3584 50  0000 C CNN
+F 2 "hoshina_library:connectable_smd" H 1950 3300 50  0001 C CNN
+F 3 "" H 1950 3300 50  0001 C CNN
+	1    1950 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L hoshina_library:connectable_smd s4
+U 1 1 5D7B9C1C
+P 1950 3800
+F 0 "s4" H 1950 4025 50  0000 C CNN
+F 1 "connectable_smd" H 1950 3934 50  0000 C CNN
+F 2 "hoshina_library:connectable_smd" H 1950 3650 50  0001 C CNN
+F 3 "" H 1950 3650 50  0001 C CNN
+	1    1950 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 3450 2550 3450
+Wire Wire Line
+	2550 3450 2550 3800
+Wire Wire Line
+	2100 3800 2550 3800
+Connection ~ 2550 3800
+Wire Wire Line
+	2550 3800 2550 4350
+Text GLabel 1800 3800 0    50   Input ~ 0
+Raspi_TX
+Text GLabel 3900 3600 0    50   Input ~ 0
+Raspi_TX
+$Comp
+L hoshina_library:connectable_smd s1
+U 1 1 5D7BBDD2
+P 1450 4800
+F 0 "s1" H 1450 5025 50  0000 C CNN
+F 1 "connectable_smd" H 1450 4934 50  0000 C CNN
+F 2 "hoshina_library:connectable_smd" H 1450 4650 50  0001 C CNN
+F 3 "" H 1450 4650 50  0001 C CNN
+	1    1450 4800
+	-1   0    0    1   
+$EndComp
+Text GLabel 1300 4800 0    50   Input ~ 0
+Raspi_SCL
+$Comp
+L hoshina_library:connectable_smd s2
+U 1 1 5D7BCB7C
+P 1450 5200
+F 0 "s2" H 1450 5425 50  0000 C CNN
+F 1 "connectable_smd" H 1450 5334 50  0000 C CNN
+F 2 "hoshina_library:connectable_smd" H 1450 5050 50  0001 C CNN
+F 3 "" H 1450 5050 50  0001 C CNN
+	1    1450 5200
+	-1   0    0    1   
+$EndComp
+Text GLabel 1300 5200 0    50   Input ~ 0
+Raspi_GPIO26
+Wire Wire Line
+	1600 4800 1650 4800
+Wire Wire Line
+	1650 4800 1650 4550
+Connection ~ 1650 4550
+Wire Wire Line
+	1650 4550 1600 4550
+Wire Wire Line
+	1650 4800 1650 5200
+Wire Wire Line
+	1650 5200 1600 5200
+Connection ~ 1650 4800
+Text GLabel 3900 4500 0    50   Input ~ 0
+Raspi_SCL
+Text GLabel 3900 5100 0    50   Input ~ 0
+Raspi_GPIO26
 $EndSCHEMATC
